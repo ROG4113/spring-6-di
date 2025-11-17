@@ -5,7 +5,7 @@ import org.springframework.stereotype.Service;
 
 import com.springframework.spring6di.services.GreetingService;
 
-@Profile("EN")
+@Profile({"EN", "default"})
 @Service("i18NService")
 public class EnglishGreetingService implements GreetingService {
 
