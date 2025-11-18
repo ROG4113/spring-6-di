@@ -17,4 +17,12 @@ public class MyController {
         System.out.println("I am in the Controller");
         return  greetingService.SayGreeting();
     }
+
+    public void beforeInit(){
+        System.out.println("## - Before Init - Called by Bean Post Processor");
+    }
+
+    public void afterInit(){
+        System.out.println("## - After init called by Bean Post Processor");
+    }
 }
